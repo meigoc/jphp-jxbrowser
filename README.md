@@ -1,7 +1,12 @@
 # jxbrowser-wrapper-jphp
 
 Обёртка над [JxBrowser 6.24.3](https://www.teamdev.com/jxbrowser) для использования в проектах на JPHP через JPPM.
+## Скриншоты
 
+![Youtube music](assets/image.png)  
+*Youtube music*
+![Test browser](assets/image2.png)  
+*Youtube music*
 ## Описание
 
 Пакет позволяет быстро интегрировать компонент браузера JxBrowser в ваши GUI-приложения на JPHP. После установки через JPPM достаточно создать форму и добавить в неё `UXJXBrowser` — обёртку над JxBrowser.
