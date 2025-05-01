@@ -11,7 +11,8 @@
 - Java 8+  
 
 ## Как использовать?
-<code><?php
+```php
+<?php
 // Создаём форму
 $form = new \php\gui\UXForm(); //<----- пример под jphp(jppm)
 $form->title = 'JXBrowser test';
@@ -29,3 +30,4 @@ $browserJX->bottomAnchor    = 0;
 // Добавляем браузер в форму
 $form->add($browserJX);
 </code>
+```
