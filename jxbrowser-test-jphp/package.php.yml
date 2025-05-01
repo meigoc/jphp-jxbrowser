@@ -1,0 +1,17 @@
+name: jxbrowser-test-jphp
+version: 1.0.0
+deps:
+  jphp-core: '*'
+  jphp-zend-ext: '*'
+  jphp-gui-ext: '*'
+  jphp-gui-jfx-linux: '*'
+  jphp-gui-jfx-win: '*'
+  jphp-jxbrowser: '*'
+  jxHack: '*'
+  JXBrowserLinux-Dependence: '*'
+plugins:
+- App
+sources:
+- src
+includes:
+- index.php

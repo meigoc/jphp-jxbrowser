@@ -1,0 +1,41 @@
+name: JXBrowserMacOs-Dependence
+version: 1.0.0
+
+plugins:
+- Hub
+- Doc
+- Gradle
+
+deps:
+  jphp-core: "*"
+
+
+devDeps:
+  dn-bundle-plugin: '*'
+
+sources:
+- src
+
+
+config:
+  ignore:
+  - /sandbox/**
+  - /.idea/**
+  - /*.iml
+  - /.git/**
+  - /examples/**
+  - /package.hub.yml
+  - /bundle/**
+  - /src-bundle/**
+  - /README.MD
+  - /.gitignore
+
+
+develnext-bundle:
+  version: 1.0.0
+  name: JXBrowserMacOs-Dependence
+  author: evodevelopers
+  icon: "develnext/bundle/jxbrowsermacosdependence/icon.png"
+  description: "JXbrowser dependence for macos "
+  group: "system"
+  class: "develnext\\bundle\\jxbrowsermacosdependence\\JXBrowserMacOsDependence"

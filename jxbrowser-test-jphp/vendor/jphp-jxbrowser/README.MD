@@ -1,0 +1,3 @@
+# JXBrowser
+Расширение добавляет chromium
+

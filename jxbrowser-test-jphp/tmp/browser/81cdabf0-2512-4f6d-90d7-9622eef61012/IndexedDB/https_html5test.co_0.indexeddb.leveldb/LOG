@@ -1,0 +1,9 @@
+2025/05/01-12:14:35.059 17227 Reusing MANIFEST /home/demonck/projects/jphp/jxbrowser-test-jphp/tmp/browser/81cdabf0-2512-4f6d-90d7-9622eef61012/IndexedDB/https_html5test.co_0.indexeddb.leveldb/MANIFEST-000001
+2025/05/01-12:14:35.495 17228 Current memtable full; waiting...
+2025/05/01-12:14:35.495 17330 Level-0 table #5: started
+2025/05/01-12:14:35.534 17330 Level-0 table #5: 779 bytes OK
+2025/05/01-12:14:35.572 17330 Delete type=0 #3
+2025/05/01-12:14:35.572 17330 Level-0 table #7: started
+2025/05/01-12:14:35.572 17330 Level-0 table #7: 0 bytes OK
+2025/05/01-12:14:35.611 17330 Delete type=0 #4
+2025/05/01-12:14:35.611 17330 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -35,3 +35,4 @@ $browserJX->bottomAnchor    = 0;
 // Добавляем браузер в форму
 $form->add($browserJX);
 ```
+<sub>⚠️ Предупреждение: Использование хака без лицензии JXBrowser нарушает условия соглашения TeamDev. Данный репозиторий - только пример интеграции. Чтобы воспользоваться взломом, используйте ```php teamDev\jxbrowser\hack\JXBrowserHack::hack(); // Initialize JXBrowser Hack```. РЕКОМЕНДУЕТСЯ ТОЛЬКО ДЛЯ ТЕСТА! КУПИТЬ ЛИЦЕНЗИЮ МОЖНО [ТУТ](https://teamdev.com/jxbrowser/#licensing-and-pricing)</sub>
