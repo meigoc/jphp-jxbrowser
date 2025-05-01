@@ -48,4 +48,122 @@ public class JXBrowserEngine extends BaseWrapper<Browser>{
         __wrappedObject.loadURL(urlSet);
     }
 
+    @Reflection.Setter
+    public void setZoom(double zoomLvl)
+    {
+        __wrappedObject.setZoomLevel(zoomLvl);
+    }
+
+    @Reflection.Getter
+    public double getZoom()
+    {
+        return  __wrappedObject.getZoomLevel();
+    }
+
+    @Reflection.Signature
+    public void loadHtml(String html)
+    {
+        __wrappedObject.loadHTML(html);
+    }
+
+    @Reflection.Signature
+    public void loadHtml(long i, String html)
+    {
+        __wrappedObject.loadHTML(i, html);
+
+    }
+
+    @Reflection.Signature
+    public void executeJavaScript(String js)
+    {
+        __wrappedObject.executeJavaScript(js);
+    }
+
+    @Reflection.Signature
+    public void executeJavaScript(long i, String js)
+    {
+        __wrappedObject.executeJavaScript(i, js);
+    }
+    @Reflection.Signature
+    public void reload() {
+        __wrappedObject.reload();
+    }
+
+    @Reflection.Signature
+    public void reload(boolean ignoreCache) {
+        __wrappedObject.reload(ignoreCache);
+    }
+
+    @Reflection.Signature
+    public void stop() {
+        __wrappedObject.stop();
+    }
+
+    @Reflection.Signature
+    public void dispose() {
+        __wrappedObject.dispose();
+    }
+
+    @Reflection.Signature
+    public boolean canGoBack() {
+        return __wrappedObject.canGoBack();
+    }
+
+    @Reflection.Signature
+    public boolean canGoForward() {
+        return __wrappedObject.canGoForward();
+    }
+
+    @Reflection.Signature
+    public void goBack() {
+        __wrappedObject.goBack();
+    }
+
+    @Reflection.Signature
+    public void goForward() {
+        __wrappedObject.goForward();
+    }
+
+    @Reflection.Getter
+    public String getTitle() {
+        return __wrappedObject.getTitle();
+    }
+
+    @Reflection.Signature
+    public String getHTML() {
+        return __wrappedObject.getHTML();
+    }
+
+    @Reflection.Signature
+    public void print() {
+        __wrappedObject.print();
+    }
+
+    @Reflection.Setter
+    public void setUserAgent(String userAgent) {
+        __wrappedObject.setUserAgent(userAgent);
+    }
+
+    @Reflection.Getter
+    public String getUserAgent() {
+        return __wrappedObject.getUserAgent();
+    }
+
+    @Reflection.Signature
+    public boolean isLoading() {
+        return __wrappedObject.isLoading();
+    }
+
+    @Reflection.Signature
+    public void setAudioMuted(boolean muted) {
+        __wrappedObject.setAudioMuted(muted);
+    }
+
+    @Reflection.Getter
+    public boolean isAudioMuted() {
+        return __wrappedObject.isAudioMuted();
+    }
+
+
+
 }

@@ -1,0 +1,13 @@
+/build/
+/bundle/
+
+.gradle/
+gradle/
+gradlew
+gradlew.bat
+settings.gradle
+build.gradle
+
+/vendor/
+
+/jars/x-jphp-*.jar
