@@ -29,5 +29,4 @@ $browserJX->bottomAnchor    = 0;
 
 // Добавляем браузер в форму
 $form->add($browserJX);
-</code>
 ```
