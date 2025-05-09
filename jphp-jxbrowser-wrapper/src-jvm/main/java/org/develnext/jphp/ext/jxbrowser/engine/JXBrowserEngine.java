@@ -60,11 +60,7 @@ public class JXBrowserEngine extends BaseWrapper<Browser>{
         return  __wrappedObject.getZoomLevel();
     }
 
-    @Reflection.Signature
-    public void loadHtml(String html)
-    {
-        __wrappedObject.loadHTML(html);
-    }
+
 
     @Reflection.Signature
     public void loadHtml(long i, String html)
@@ -91,7 +87,7 @@ public class JXBrowserEngine extends BaseWrapper<Browser>{
 
     @Reflection.Signature
     public void reload(boolean ignoreCache) {
-        __wrappedObject.reload(ignoreCache);
+        __wrappedObject.reloadIgnoringCache();
     }
 
     @Reflection.Signature
@@ -129,8 +125,14 @@ public class JXBrowserEngine extends BaseWrapper<Browser>{
         return __wrappedObject.getTitle();
     }
 
-    @Reflection.Signature
-    public String getHTML() {
+    @Reflection.Setter
+    public void SetHtml(String html)
+    {
+        __wrappedObject.loadHTML(html);
+    }
+
+    @Reflection.Getter
+    public String getHtml() {
         return __wrappedObject.getHTML();
     }
 
@@ -159,7 +161,7 @@ public class JXBrowserEngine extends BaseWrapper<Browser>{
         __wrappedObject.setAudioMuted(muted);
     }
 
-    @Reflection.Getter
+    @Reflection.Signature
     public boolean isAudioMuted() {
         return __wrappedObject.isAudioMuted();
     }

@@ -1,0 +1,33 @@
+{
+  "classPaths": {
+    "": [
+      "/jphp-runtime/jars/jphp-runtime-1.0.3.jar",
+      "/jphp-gui-ext/jars/x-jphp-gui-ext-3.0.1.jar",
+      "/jphp-core/jars/jphp-core-0.9.3-SNAPSHOT.jar",
+      "/jphp-core/jars/asm-tree-7.3.1.jar",
+      "/jphp-core/jars/asm-analysis-7.3.1.jar",
+      "/jphp-core/jars/asm-util-7.3.1.jar",
+      "/jphp-core/jars/asm-7.3.1.jar",
+      "/jphp-core/jars/asm-commons-7.3.1.jar",
+      "/jphp-runtime/jars/jphp-runtime-1.0.3.jar",
+      "/jphp-xml-ext/jars/jphp-xml-ext-0.9.3-SNAPSHOT.jar",
+      "/jphp-graphic-ext/jars/jphp-graphic-ext-0.9.3-SNAPSHOT.jar"
+    ],
+    "dev": [
+      "/jphp-core/jars/jphp-core-0.9.3-SNAPSHOT.jar",
+      "/jphp-core/jars/asm-tree-7.3.1.jar",
+      "/jphp-core/jars/asm-analysis-7.3.1.jar",
+      "/jphp-core/jars/asm-util-7.3.1.jar",
+      "/jphp-core/jars/asm-7.3.1.jar",
+      "/jphp-core/jars/asm-commons-7.3.1.jar",
+      "/jphp-runtime/jars/jphp-runtime-1.0.3.jar"
+    ],
+    "plugin": [
+      "/dn-bundle-plugin/src"
+    ]
+  },
+  "includes": [],
+  "plugins": [
+    "DevelNextBundle"
+  ]
+}

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/jxbrowser-dependencies/jxbrowser-linux" />
+    <file type="web" url="file://$PROJECT_DIR$/jxbrowser-dependencies/jxbrowser-mac" />
+    <file type="web" url="file://$PROJECT_DIR$/jxbrowser-dependencies/jxbrowser-windows-x32" />
+    <file type="web" url="file://$PROJECT_DIR$/jxbrowser-dependencies/jxbrowser-windows-x64" />
+  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="zulu-1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
