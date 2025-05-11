@@ -9,9 +9,13 @@ deps:
   jphp-jxbrowser: '*'
   jxHack: '*'
   JXBrowserLinux-Dependence: '*'
+  jphp-gui-desktop-ext: ^3.0.0
+  dn-app-framework: '*'
 plugins:
 - App
 sources:
 - src
 includes:
 - index.php
+
+
