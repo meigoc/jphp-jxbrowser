@@ -13,6 +13,7 @@ import org.develnext.jphp.ext.javafx.classes.layout.UXStackPane;
 import org.develnext.jphp.ext.jxbrowser.JXBrowserExtension;
 import org.develnext.jphp.ext.jxbrowser.engine.settings.JXBrowserSettings;
 import org.develnext.jphp.ext.jxbrowser.gui.menu.CustomContextMenu;
+import org.develnext.jphp.ext.jxbrowser.gui.menu.JXBrowserContextMenuManager;
 import php.runtime.annotation.Reflection;
 import php.runtime.env.Environment;
 import php.runtime.ext.JavaExtension;
@@ -34,18 +35,16 @@ public class UXJXBrowser extends UXStackPane<BrowserView> {
         super(env, clazz);
     }
 
-
-
     protected Browser engine;
-    protected Invoker doShowContextMenu;
-    protected Invoker showContextMenu;
+    protected JXBrowserContextMenuManager contextMenuManager;
+
 
     public BrowserView getWrappedObject(){
         return (BrowserView)super.getWrappedObject();
     }
 
     @Reflection.Signature
-    public void initBrowser(JXBrowserSettings settings)
+    public void initBrowser(JXBrowserSettings settings, Environment env)
     {
         BrowserContext context = new BrowserContext(settings.getBrowserContextParams());
 
@@ -53,66 +52,22 @@ public class UXJXBrowser extends UXStackPane<BrowserView> {
 
         __wrappedObject = new BrowserView(engine);
 
-        CustomContextMenu.createInstance();
-
-        _setEvents();
+        _initialize(env);
 
     }
 
     @Reflection.Getter
     public Browser getEngine(){return engine;}
 
-    private void _setEvents()
+    private void _initialize(Environment env)
     {
-        engine.setContextMenuHandler(new ContextMenuHandler() {
-            @Override
-            public void showContextMenu(ContextMenuParams params) {
-                try {
-                    if (doShowContextMenu != null) {
-                        doShowContextMenu.call();
-                    }
-
-                } catch (Throwable e) {
-                   e.printStackTrace();
-                }
-
-                CustomContextMenu.showCustomContextMenu(getWrappedObject(), params);
-
-                try {
-                    if (showContextMenu != null) {
-                        showContextMenu.call();
-                    }
-                } catch (Throwable e) {
-                    e.printStackTrace();
-                }
-
-            }
-        });
+        contextMenuManager = new JXBrowserContextMenuManager(env);
+        contextMenuManager.initEvent(getWrappedObject());
     }
+    @Reflection.Getter
+    public JXBrowserContextMenuManager getContextMenuManager(){return contextMenuManager;}
 
-    @Reflection.Signature
-    public void setOnDoShowContextMenu(Invoker invoker)
-    {
-        doShowContextMenu = invoker;
-    }
 
-    @Reflection.Signature
-    public void setOnShowContextMenu(Invoker invoker)
-    {
-        showContextMenu = invoker;
-    }
-
-    @Reflection.Signature
-    public void addContextMenuItem(MenuItem menuItem)
-    {
-        CustomContextMenu.addItemMenu(menuItem);
-    }
-
-    @Reflection.Signature
-    public void removeContextMenuItem(int i)
-    {
-        CustomContextMenu.removeItemMenu(i);
-    }
 
 
 

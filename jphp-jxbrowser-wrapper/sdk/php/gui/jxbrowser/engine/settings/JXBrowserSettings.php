@@ -28,17 +28,11 @@ final class JXBrowserSettings {
      /**
       * $dataDir -> папка где будет распакова браузер
       * @param string $dataDir КЭШ
+      * @param string $acceptLanguage
       */
-    public function __construct(String dataDir)
+    public function __construct( string $dataDir,  string $acceptLanguage = null)
     {
     }
 
-     /**
-      * $dataDir -> папка где будет распакова браузер
-      * @param string $dataDir КЭШ
-      * @param string $acceptLanguage
-      */
-    public function __construct(String dataDir, String acceptLanguage)
-    {
-    }
+
 }

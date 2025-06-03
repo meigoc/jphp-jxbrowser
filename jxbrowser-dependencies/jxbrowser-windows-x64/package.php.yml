@@ -35,7 +35,7 @@ develnext-bundle:
   version: 1.0.0
   name: JXBrowserWin64-Dependence
   author: evodevelopers
-  icon: "develnext/bundle/jxbrowserwin64dependence/icon.png"
+  icon: "develnext/bundle/jx/browser/win64/icon32.png"
   description: "JXbrowser dependence for win64 "
   group: "system"
-  class: "develnext\\bundle\\jxbrowserwin64dependence\\JXBrowserWinDependence"
+  class: "develnext\\bundle\\jx\\browser\\win64\\JXWin64"

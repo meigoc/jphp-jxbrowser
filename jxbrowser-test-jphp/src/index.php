@@ -5,7 +5,8 @@ use php\gui\jxbrowser\engine\settings\JXBrowserSettings;
 use php\gui\jxbrowser\UXJXBrowser;
 use php\gui\UXMenuItem;
 
-$url = 'https://html5test.co/';
+
+$url = 'https://music.yandex.ru/';
 
 function createItemReload(UXJXBrowser $browser) : \php\gui\UXMenuItem
 {
@@ -13,7 +14,7 @@ function createItemReload(UXJXBrowser $browser) : \php\gui\UXMenuItem
     $menuItem->text = 'Перезагрузить страницу';
     $menuItem->on("Action", function (\php\gui\event\UXEvent $event)use($browser) {
         $browser->engine->reload();
-        $browser->addContextMenuItem(createItemPutUpStarGit($browser->engine));
+        $browser->contextMenuManager->addContextMenuItem(createItemPutUpStarGit($browser->engine));
 
     });
 
@@ -53,6 +54,30 @@ function createItemMinusZoom(\php\gui\jxbrowser\engine\JXBrowserEngine $engine)
     return $menuItem;
 }
 
+function addAllItemsMenu(UXJXBrowser $browserJX)
+{
+    $browserJX->contextMenuManager->addContextMenuItem(createItemReload($browserJX));
+    $browserJX->contextMenuManager->addContextMenuItem(createItemAddZoom($browserJX->engine));
+    $browserJX->contextMenuManager->addContextMenuItem(createItemMinusZoom($browserJX->engine));
+}
+
+function addEvents(UXJXBrowser $browserJX)
+{
+    $iDoShow = 0;
+    $iShow = 0;
+
+    $browserJX->contextMenuManager->setOnDoShowContextMenu(function ()use(&$iDoShow){
+        $iDoShow++;
+        var_dump("DO SHOW EVENTS CLICK CONTEXT MENU OPEN: ". $iDoShow);
+    });
+
+    $browserJX->contextMenuManager->setOnShowContextMenu(function ()use(&$iShow){
+        $iShow++;
+        var_dump("SHOW EVENTS CLICK CONTEXT MENU OPEN: ".$iShow);
+    });
+
+}
+
 UXApplication::launch(function ()use(&$url) {
     
     teamDev\jxbrowser\hack\JXBrowserHack::hack(); // Initialize JXBrowser Hack
@@ -64,6 +89,7 @@ UXApplication::launch(function ()use(&$url) {
     $settingsBrowserJX = new JXBrowserSettings("/tmp/browser/".time());
 
     $browserJX = new UXJXBrowser();
+
     $browserJX->initBrowser($settingsBrowserJX);
     $browserJX->engine->url = $url;
     $browserJX->size = [800, 600];
@@ -71,9 +97,10 @@ UXApplication::launch(function ()use(&$url) {
     $browserJX->bottomAnchor = 0;
     $browserJX->leftAnchor = 0;
     $browserJX->topAnchor = 30;
-    $browserJX->addContextMenuItem(createItemReload($browserJX));
-    $browserJX->addContextMenuItem(createItemAddZoom($browserJX->engine));
-    $browserJX->addContextMenuItem(createItemMinusZoom($browserJX->engine));
+
+    addAllItemsMenu($browserJX); // NEW API
+    addEvents($browserJX);
+
     $form->add($browserJX);
 
     $searchEdit = new \php\gui\UXTextField();
@@ -89,7 +116,6 @@ UXApplication::launch(function ()use(&$url) {
         }
     });
     $form->add($searchEdit);
-
 
 });
 

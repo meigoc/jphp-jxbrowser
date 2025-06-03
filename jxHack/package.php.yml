@@ -39,4 +39,4 @@ develnext-bundle:
   icon: "develnext/bundle/jxhack/icon32.png"
   description: "JXbrowser hacking extension"
   group: "system"
-  class: "develnext\\bundle\\jxhack\\JXHack"
+  class: "develnext\\bundle\\jx\\browser\\hack\\JXHack"

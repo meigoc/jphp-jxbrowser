@@ -14,10 +14,10 @@ use php\lib\fs;
 
 class JXBrowser extends AbstractJarBundle
 {
-    function onAdd(Project $project, AbstractBundle $owner = null){
+    public function onAdd(Project $project, AbstractBundle $owner = null){
         parent::onAdd($project, $owner);
     }
-    function onRemove(Project $project, AbstractBundle $owner = null){
+    public function onRemove(Project $project, AbstractBundle $owner = null){
         parent::onRemove($project, $owner);
     }
 

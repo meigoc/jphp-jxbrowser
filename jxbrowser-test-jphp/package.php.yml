@@ -6,7 +6,7 @@ deps:
   jphp-gui-ext: '*'
   jphp-gui-jfx-linux: '*'
   jphp-gui-jfx-win: '*'
-  jphp-jxbrowser: '*'
+  jphp-jxbrowser: '1.1.5'
   jxHack: '*'
   JXBrowserLinux-Dependence: '*'
   jphp-gui-desktop-ext: ^3.0.0

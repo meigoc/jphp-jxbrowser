@@ -34,8 +34,8 @@ config:
 develnext-bundle:
   version: 1.0.0
   name: JXBrowserLinux-Dependence
-  author: evodevelopers
-  icon: "develnext/bundle/jxbrowserlinuxdependence/icon.png"
-  description: "JXbrowser dependence for linux 64x"
+  author: Evodevelopers
+  icon: "develnext/bundle/jx/browser/linux/icon32.png"
+  description: "JXbrowser dependence for linux"
   group: "system"
-  class: "develnext\\bundle\\jxbrowserlinuxdependence\\JXBrowserLinuxDependence"
+  class: "develnext\\bundle\\jx\\browser\\linux\\JXLinux"

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ff1d8248-35cc-422e-8d6b-2032e5b41f6a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/sdk/php/gui/jxbrowser/menu/UXJXContextMenu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/sdk/php/gui/jxbrowser/menu/UXJXContextMenuManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/src-jvm/main/java/org/develnext/jphp/ext/jxbrowser/gui/menu/JXBrowserContextMenuManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src-bundle/develnext/bundle/jx/browser/hack/JXHack.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-linux/src-bundle/develnext/bundle/jx/browser/linux/JXLinux.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-mac/src-bundle/develnext/bundle/jx/browser/macos/JXMacos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-windows-x32/src-bundle/develnext/bundle/jx/browser/win64/JXWin32.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-windows-x64/src-bundle/develnext/bundle/jx/browser/win64/JXWin64.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/build/classes/java/main/org/develnext/jphp/ext/jxbrowser/JXBrowserExtension.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/build/classes/java/main/org/develnext/jphp/ext/jxbrowser/JXBrowserExtension.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/build/classes/java/main/org/develnext/jphp/ext/jxbrowser/gui/UXJXBrowser$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/build/classes/java/main/org/develnext/jphp/ext/jxbrowser/gui/UXJXBrowser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/build/classes/java/main/org/develnext/jphp/ext/jxbrowser/gui/UXJXBrowser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/build/classes/java/main/org/develnext/jphp/ext/jxbrowser/gui/menu/CustomContextMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/build/classes/java/main/org/develnext/jphp/ext/jxbrowser/gui/menu/CustomContextMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/jars/x-jphp-jxbrowser-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/package.php.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/package.php.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/sdk/php/gui/jxbrowser/UXJXBrowser.php" beforeDir="false" afterPath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/sdk/php/gui/jxbrowser/UXJXBrowser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/sdk/php/gui/jxbrowser/engine/JXBrowserEngine.php" beforeDir="false" afterPath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/sdk/php/gui/jxbrowser/engine/JXBrowserEngine.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/sdk/php/gui/jxbrowser/engine/settings/JXBrowserSettings.php" beforeDir="false" afterPath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/sdk/php/gui/jxbrowser/engine/settings/JXBrowserSettings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/src-jvm/main/java/org/develnext/jphp/ext/jxbrowser/JXBrowserExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/src-jvm/main/java/org/develnext/jphp/ext/jxbrowser/JXBrowserExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/src-jvm/main/java/org/develnext/jphp/ext/jxbrowser/gui/UXJXBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/src-jvm/main/java/org/develnext/jphp/ext/jxbrowser/gui/UXJXBrowser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/src-jvm/main/java/org/develnext/jphp/ext/jxbrowser/gui/menu/CustomContextMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jphp-jxbrowser-wrapper/src-jvm/main/java/org/develnext/jphp/ext/jxbrowser/gui/menu/CustomContextMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/x-jxHack-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jars/x-jxHack-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.php.yml" beforeDir="false" afterPath="$PROJECT_DIR$/package.php.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src-bundle/develnext/bundle/jxhack/JXHack.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-linux/jars/x-JXBrowserLinux-Dependence-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-linux/package.php.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-linux/package.php.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-linux/src-bundle/.data/img/develnext/bundle/jxbrowserlinuxdependence/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-linux/src-bundle/.data/img/develnext/bundle/jx/browser/linux/icon32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-linux/src-bundle/develnext/bundle/jxbrowserlinuxdependence/JXBrowserLinuxDependence.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-mac/jars/x-JXBrowserMacOs-Dependence-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-mac/jars/x-JXBrowserMacOs-Dependence-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-mac/package.php.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-mac/package.php.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-mac/src-bundle/.data/img/develnext/bundle/jxbrowsermacosdependence/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-mac/src-bundle/develnext/bundle/jxbrowserlinuxdependence/JXBrowserMacOsDependence.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-windows-x32/jars/x-JXBrowserWin32-Dependence-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-windows-x32/jars/x-JXBrowserWin32-Dependence-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-windows-x32/package.php.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-windows-x32/package.php.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-windows-x32/src-bundle/.data/img/develnext/bundle/jxbrowserwin32dependence/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-windows-x32/src-bundle/.data/img/develnext/bundle/jx/browser/win32/icon32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-windows-x32/src-bundle/develnext/bundle/jxbrowserwin32dependence/JXBrowserWinDependence.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-windows-x64/jars/x-JXBrowserWin64-Dependence-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-windows-x64/jars/x-JXBrowserWin64-Dependence-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-windows-x64/package.php.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-windows-x64/package.php.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-windows-x64/src-bundle/.data/img/develnext/bundle/jxbrowserwin64dependence/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-windows-x64/src-bundle/.data/img/develnext/bundle/jx/browser/win64/icon32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-dependencies/jxbrowser-windows-x64/src-bundle/develnext/bundle/jxbrowserwin64dependence/JXBrowserWinDependence.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-test-jphp/package-lock.php.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-test-jphp/package.php.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../jxbrowser-test-jphp/package.php.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jxbrowser-test-jphp/src/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../jxbrowser-test-jphp/src/index.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2y0AbGIFZRRkVjEfFSS4XK5GNGD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/demonck/projects/jphp/jphp-jxbrowser/jphp-jxbrowser-wrapper",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src-bundle" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-PS-251.23774.466" />
+        <option value="bundled-php-predefined-a98d8de5180a-aaeaa8632555-com.jetbrains.php.sharedIndexes-PS-251.23774.466" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff1d8248-35cc-422e-8d6b-2032e5b41f6a" name="Changes" comment="" />
+      <created>1748961187147</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748961187147</updated>
+      <workItem from="1748961188290" duration="515000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

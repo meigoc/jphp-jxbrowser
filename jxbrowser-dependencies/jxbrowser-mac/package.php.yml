@@ -34,8 +34,8 @@ config:
 develnext-bundle:
   version: 1.0.0
   name: JXBrowserMacOs-Dependence
-  author: evodevelopers
-  icon: "develnext/bundle/jxbrowsermacosdependence/icon.png"
-  description: "JXbrowser dependence for macos "
+  author: Evodevelopers
+  icon: "develnext/bundle/jx/browser/macos/icon32.png"
+  description: "JXbrowser dependence for macos"
   group: "system"
-  class: "develnext\\bundle\\jxbrowsermacosdependence\\JXBrowserMacOsDependence"
+  class: "develnext\\bundle\\jx\\browser\\macos\\JXMacos"

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/jxbrowser-linux/jphp-FXTaskbarProgressBar/sdk" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jxbrowser-linux/jphp-FXTaskbarProgressBar/src-bundle" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jxbrowser-linux/src-bundle" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jxbrowser-windows-x32/src-bundle" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jxbrowser-windows-x64/src-bundle" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

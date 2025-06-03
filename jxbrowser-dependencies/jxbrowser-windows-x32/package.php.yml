@@ -35,7 +35,7 @@ develnext-bundle:
   version: 1.0.0
   name: JXBrowserWin32-Dependence
   author: evodevelopers
-  icon: "develnext/bundle/jxbrowserwin32dependence/icon.png"
-  description: "JXbrowser dependence for win32 "
+  icon: "develnext/bundle/jx/browser/win32/icon32.png"
+  description: "JXbrowser dependence for win32"
   group: "system"
-  class: "develnext\\bundle\\jxbrowserwin32dependence\\JXBrowserWinDependence"
+  class: "develnext\\bundle\\jx\\browser\\win32\\JXWin32"

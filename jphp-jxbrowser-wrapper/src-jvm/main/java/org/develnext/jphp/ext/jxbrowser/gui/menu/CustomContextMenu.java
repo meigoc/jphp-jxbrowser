@@ -11,47 +11,46 @@ import javafx.scene.Node;
 import javafx.scene.control.ContextMenu;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
+import org.develnext.jphp.ext.javafx.classes.UXContextMenu;
+import org.develnext.jphp.ext.jxbrowser.JXBrowserExtension;
+import php.runtime.annotation.Reflection;
+import php.runtime.env.Environment;
+import php.runtime.reflection.ClassEntity;
 
 import java.awt.*;
 
+@Reflection.Namespace(JXBrowserExtension.NS + "\\menu")
+@Reflection.Name("UXJXContextMenu")
+public class CustomContextMenu extends UXContextMenu<ContextMenu> {
 
-public class CustomContextMenu extends ContextMenu {
 
-    protected static ContextMenu instance;
-
-    protected CustomContextMenu() {
-        super();
-
-        if (instance == null) {
-            setAutoHide(true);
-            instance = this;
-        }
+    public CustomContextMenu(Environment env, ContextMenu wrappedObject) {
+        super(env, wrappedObject);
     }
 
-    public static void createInstance()
+    public CustomContextMenu(Environment env, ClassEntity clazz) {
+        super(env, clazz);
+    }
+
+    public boolean removeItemMenu(MenuItem menuI)
     {
-        new CustomContextMenu();
+        return getWrappedObject().getItems().remove(menuI);
     }
 
-    public static void addItemMenu(MenuItem menuI)
+    public MenuItem removeItemMenu(int index)
     {
-        instance.getItems().add(menuI);
+        return getWrappedObject().getItems().remove(index);
     }
 
-    public static boolean removeItemMenu(MenuItem menuI)
+    public void addItemMenu(MenuItem menuI)
     {
-        return instance.getItems().remove(menuI);
+         getWrappedObject().getItems().add(menuI);
     }
 
-    public static MenuItem removeItemMenu(int index)
-    {
-        return instance.getItems().remove(index);
-    }
-
-    public static void showCustomContextMenu(BrowserView browserV, ContextMenuParams params)
+    public void showCustomContextMenu(BrowserView browserV, ContextMenuParams params)
     {
         Platform.runLater(() -> {
-            instance.hide();
+            getWrappedObject().hide();
 
             Point location = params.getLocation();
             Point2D screenCoords = browserV.localToScreen(
@@ -59,7 +58,14 @@ public class CustomContextMenu extends ContextMenu {
                     location.getY()
             );
 
-            instance.show(browserV, screenCoords.getX(), screenCoords.getY());
+            showCustomContextMenu(browserV, screenCoords.getX(), screenCoords.getY());
         });
     }
+
+    public void showCustomContextMenu(BrowserView browserV, double x, double y)
+    {
+        getWrappedObject().show(browserV, x, y);
+    }
+
+
 }
