@@ -36,10 +36,10 @@ class JXBrowserEngine
 
     /**
      * Загружает HTML-контент
-     * @param int $frame id браузера(frame)
      * @param string $html HTML-код
+     * @param int $frame id браузера(frame)
      */
-    public function loadHtml($frame, $html)
+    public function loadHtml($html, $frame = null)
     {
     }
 

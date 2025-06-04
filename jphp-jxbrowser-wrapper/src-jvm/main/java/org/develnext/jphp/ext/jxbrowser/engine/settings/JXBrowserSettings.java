@@ -1,6 +1,7 @@
 package org.develnext.jphp.ext.jxbrowser.engine.settings;
 
 import com.teamdev.jxbrowser.chromium.BrowserContextParams;
+import com.teamdev.jxbrowser.chromium.BrowserType;
 import org.develnext.jphp.ext.jxbrowser.JXBrowserExtension;
 import php.runtime.annotation.Reflection;
 import php.runtime.env.Environment;
@@ -15,28 +16,24 @@ import php.runtime.reflection.ClassEntity;
 @Reflection.Final
 public class JXBrowserSettings extends BaseObject {
     protected BrowserContextParams __browserContextParams;
+    protected BrowserType browserType;
 
     public JXBrowserSettings(Environment env, ClassEntity clazz) {
         super(env, clazz);
     }
 
     @Reflection.Signature
-    public void xuy()
-    {
-
-    }
-
-    @Reflection.Signature
     public void __construct(String dataDir)
     {
         __browserContextParams = new BrowserContextParams(dataDir);
-
+        browserType = BrowserType.HEAVYWEIGHT;
     }
 
     @Reflection.Signature
     public void __construct(String dataDir, String acceptLanguage)
     {
         __browserContextParams = new BrowserContextParams(dataDir, acceptLanguage);
+        browserType = BrowserType.HEAVYWEIGHT;
     }
 
     @Reflection.Getter
@@ -56,6 +53,20 @@ public class JXBrowserSettings extends BaseObject {
 
     @Reflection.Getter
     public String getMemoryDir(){return __browserContextParams.getMemoryDir();}
+
+    @Reflection.Setter
+    public void setUseLightweightRendering(boolean useLightweightRendering){
+        browserType = useLightweightRendering
+                ? BrowserType.LIGHTWEIGHT
+                : BrowserType.HEAVYWEIGHT;
+    }
+
+    @Reflection.Getter
+    public boolean getUseLightweightRendering(){
+        return browserType == BrowserType.LIGHTWEIGHT;
+    }
+
+    public BrowserType getBrowserType(){return browserType;}
 
     public BrowserContextParams getBrowserContextParams(){return __browserContextParams;}
 }

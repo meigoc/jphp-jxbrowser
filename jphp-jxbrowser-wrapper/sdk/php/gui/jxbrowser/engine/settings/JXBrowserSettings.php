@@ -24,6 +24,12 @@ final class JXBrowserSettings {
     */
     public $memoryDir;
 
+    /**
+    * Устанавливает, как будет отображаться браузер. УСТАНОВИМ МОЖНО ДО ИНИЦИАЛИЗАЦИИ UXJXBrowser!
+    * @var bool
+    */
+    public $useLightweightRendering;
+
 
      /**
       * $dataDir -> папка где будет распакова браузер

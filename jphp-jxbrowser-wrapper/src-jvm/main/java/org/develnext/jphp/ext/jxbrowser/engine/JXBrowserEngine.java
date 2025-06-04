@@ -31,11 +31,6 @@ public class JXBrowserEngine extends BaseWrapper<Browser>{
         return super.getWrappedObject();
     }
 
-    @Reflection.Signature
-    public void __construct(){
-        __wrappedObject = new Browser();
-    }
-
     @Reflection.Getter
     public String getUrl()
     {
@@ -63,10 +58,15 @@ public class JXBrowserEngine extends BaseWrapper<Browser>{
 
 
     @Reflection.Signature
-    public void loadHtml(long i, String html)
+    public void loadHtml(String html, int i)
     {
         __wrappedObject.loadHTML(i, html);
+    }
 
+    @Reflection.Signature
+    public void loadHtml(String html)
+    {
+        __wrappedObject.loadHTML(html);
     }
 
     @Reflection.Signature
@@ -123,12 +123,6 @@ public class JXBrowserEngine extends BaseWrapper<Browser>{
     @Reflection.Getter
     public String getTitle() {
         return __wrappedObject.getTitle();
-    }
-
-    @Reflection.Setter
-    public void SetHtml(String html)
-    {
-        __wrappedObject.loadHTML(html);
     }
 
     @Reflection.Getter

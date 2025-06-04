@@ -47,9 +47,9 @@ public class UXJXBrowser extends UXStackPane<BrowserView> {
     public void initBrowser(JXBrowserSettings settings, Environment env)
     {
         BrowserContext context = new BrowserContext(settings.getBrowserContextParams());
+        BrowserType browserType = settings.getBrowserType();
 
-        engine = new Browser(context);
-
+        engine = new Browser(browserType, context);
         __wrappedObject = new BrowserView(engine);
 
         _initialize(env);
