@@ -2,6 +2,7 @@ package org.develnext.jphp.ext.jxbrowser.engine;
 
 import com.teamdev.jxbrowser.chromium.Browser;
 import com.teamdev.jxbrowser.chromium.BrowserContextParams;
+import com.teamdev.jxbrowser.chromium.JSValue;
 import com.teamdev.jxbrowser.chromium.javafx.BrowserView;
 import javafx.scene.Node;
 
@@ -9,9 +10,12 @@ import javafx.scene.Node;
 import javafx.scene.layout.StackPane;
 import org.develnext.jphp.ext.javafx.classes.layout.UXStackPane;
 import org.develnext.jphp.ext.jxbrowser.JXBrowserExtension;
+import php.runtime.Memory;
 import php.runtime.annotation.Reflection;
 import php.runtime.env.Environment;
 import php.runtime.lang.BaseWrapper;
+import php.runtime.memory.DoubleMemory;
+import php.runtime.memory.StringMemory;
 import php.runtime.reflection.ClassEntity;
 
 import java.util.UUID;
@@ -73,6 +77,17 @@ public class JXBrowserEngine extends BaseWrapper<Browser>{
     public void executeJavaScript(String js)
     {
         __wrappedObject.executeJavaScript(js);
+    }
+
+    @Reflection.Signature
+    public Memory executeJavaScriptAndReturnValue(String js)
+    {
+        JSValue value = __wrappedObject.executeJavaScriptAndReturnValue(js);
+        if (value.isString()){return new StringMemory(value.getStringValue());}
+        else if (value.isNumber()){return new DoubleMemory(value.getNumberValue());}
+        else if (value.isBoolean()){return value.getBooleanValue() ? Memory.TRUE : Memory.FALSE;}
+        else if (value.isNull()){return Memory.NULL;}
+        else {throw new IllegalStateException("unsupported or unwrapped return value");}
     }
 
     @Reflection.Signature

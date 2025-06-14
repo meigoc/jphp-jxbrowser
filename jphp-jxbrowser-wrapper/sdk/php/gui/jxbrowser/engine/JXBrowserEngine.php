@@ -52,6 +52,14 @@ class JXBrowserEngine
     }
 
     /**
+     * Выполняет js-код и возращает значение
+     * @param string $js js-код
+     */
+    public function executeJavaScriptAndReturnValue($js)
+    {
+    }
+
+    /**
      * Перезагружает текущую страницу в браузере
      * @param bool $ignoreCache Если true, игнорирует кеш браузера (загружает с сервера)
      */
